@@ -1,5 +1,5 @@
 const express = require("express");
-const stripe = require("stripe")("sk_test_veNKLVHyiDWtsPK70UFnQA36");
+const stripe = require("stripe")("Mewo");
 const bodyparser = require("body-parser");
 const exphbs = require("express-handlebars");
 
@@ -45,9 +45,3 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
-
-/* 
-  req.body  stripeToken: 'tok_1EV3SqD51smmJvHvXiB3lFDg',
-  stripeTokenType: 'card',
-  stripeEmail: 'test@demo.com'
-*/
