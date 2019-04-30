@@ -1,0 +1,24 @@
+<section class="py2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5"> X eBook </h1>
+      <p class="lead">X BOX eBook !!!</p>
+      <form action="/charge" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_goWqoK3YewVYPeVAwKurDT1C" data-amount="2500" data-name="x box eBook"
+          data-description="x box eBook by idiot" data-image="/img/marketplace.png" data-locale="auto"
+          data-currency="gbp">
+          </script>
+        <script>
+          //hide stripe default button
+          document.querySelector('.stripe-button-el').style.display = 'none';
+        </script>
+        <button class="btn btn-outline-dark text-white btn-lg">Purchase for $25</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="/img/book.png" alt="dev ebook">
+
+    </div>
+  </div>
+</section>
